@@ -1,8 +1,15 @@
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/6GFQzsCRser
+ */
+
+import Button from "./components/Button"
+
 export default function Component() {
 	return (
 		<div className='flex flex-col min-h-screen'>
-			<header className='px-4 lg:px-6 h-14 flex items-center'>
-				<span className='font-bold text-2xl'>Felipe Malacarne</span>
+			<header className='px-4 lg:px-6 h-14 flex items-center bg-[#673ab7] text-white'>
+				<span className='font-bold text-2xl'>Your Name</span>
 				<nav className='ml-auto flex gap-4 sm:gap-6'>
 					<a
 						className='text-sm font-medium hover:underline underline-offset-4'
@@ -23,15 +30,15 @@ export default function Component() {
 						Contact
 					</a>
 				</nav>
-				{/* <button className='ml-4'>Download Resume</button> */}
+				<Button className='ml-4'>Download Resume</Button>
 			</header>
 			<main className='flex-1'>
-				<section className='w-full py-12 md:py-24 lg:py-32'>
+				<section className='w-full py-12 md:py-24 lg:py-32 bg-[#673ab7] text-white'>
 					<div className='container px-4 md:px-6'>
 						<h1 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none'>
 							Hello, I'm a web developer
 						</h1>
-						<button className='mt-4'>View Projects</button>
+						<Button className='mt-4'>View Projects</Button>
 					</div>
 				</section>
 				<section
@@ -48,7 +55,7 @@ export default function Component() {
 									alt='Project 1'
 									className='w-full h-48 object-cover mb-4'
 									height='200'
-									src='/placeholder.svg'
+									src='https://placehold.co/400x200'
 									style={{
 										aspectRatio: "200/200",
 										objectFit: "cover",
@@ -65,7 +72,7 @@ export default function Component() {
 					</div>
 				</section>
 				<section
-					className='w-full py-12 md:py-24 lg:py-32 bg-gray-100'
+					className='w-full py-12 md:py-24 lg:py-32 bg-[#673ab7] text-white'
 					id='skills'
 				>
 					<div className='container px-4 md:px-6'>
@@ -73,12 +80,7 @@ export default function Component() {
 							Skills
 						</h2>
 						<ul className='list-none grid grid-cols-2 md:grid-cols-4 gap-4 mt-8'>
-							<li>TypeScript</li>
-							<li>JavaScript</li>
-							<li>NextJS</li>
-							<li>Web Performance</li>
-							<li>Docker</li>
-							<li>NodeJS</li>
+							<li>Javascript</li>
 						</ul>
 					</div>
 				</section>
@@ -92,8 +94,8 @@ export default function Component() {
 						</h2>
 						<p className='mt-4'>
 							You can reach me at:{" "}
-							<a className='underline text-blue-500' href='#'>
-								jethrinfox@gmail.com
+							<a className='underline text-[#673ab7]' href='#'>
+								your-email@example.com
 							</a>
 						</p>
 					</div>
